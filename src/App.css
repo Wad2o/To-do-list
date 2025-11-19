@@ -1,0 +1,8 @@
+body{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  background-color: antiquewhite;
+}
