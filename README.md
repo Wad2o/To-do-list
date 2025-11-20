@@ -1,18 +1,31 @@
-# React + Vite
+# Todo List React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application **Todo List** simple réalisée avec **React**.  
+Elle permet d’ajouter, afficher et supprimer des tâches par jour de la semaine, avec une sauvegarde automatique dans le navigateur grâce à **localStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités
 
-## React Compiler
+- Ajouter une tâche avec texte et jour associé  
+- Afficher les tâches regroupées par jour de la semaine  
+- Supprimer une tâche en un clic  
+- Sauvegarde automatique des tâches dans le navigateur  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Technologies utilisées
 
-## Expanding the ESLint configuration
+- React (Hooks : `useState`, `useEffect`)  
+- JavaScript (ES6+)  
+- CSS  
+- localStorage  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Installation et utilisation
+
+1. Cloner le repository :  
+
+```bash
+git clone https://github.com/votre-utilisateur/nom-du-repo.git
