@@ -14,18 +14,17 @@ Elle permet d’ajouter, afficher et supprimer des tâches par jour de la semain
 
 ---
 
-## Technologies utilisées
+## Basée sur du
 
 - React (Hooks : `useState`, `useEffect`)  
 - JavaScript (ES6+)  
 - CSS  
 - localStorage  
 
----
 
-## Installation et utilisation
 
-1. Cloner le repository :  
+ 
 
-```bash
-git clone https://github.com/votre-utilisateur/nom-du-repo.git
+
+
+
