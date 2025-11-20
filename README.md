@@ -1,5 +1,5 @@
 # Todo List React
- une app qui vous permez d'organiser et préparer votre quotidien en ajoutant des tâches et en les supprimant une fois effectué !
+ une app qui vous permet d'organiser et de  planifier votre quotidien en notant vos tâches et en les supprimant une fois effectué !
 
 ---
 
