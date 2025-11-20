@@ -1,7 +1,5 @@
 # Todo List React
-
-Une application **Todo List** simple réalisée avec **React**.  
-Elle permet d’ajouter, afficher et supprimer des tâches par jour de la semaine, avec une sauvegarde automatique dans le navigateur grâce à **localStorage**.
+ une app qui vous permez d'organiser et préparer votre quotidien en ajoutant des tâches et en les supprimant une fois effectué !
 
 ---
 
