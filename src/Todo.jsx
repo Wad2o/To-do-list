@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './todo.css';
 
 function Todo() {
-    const [todos, setTodos] = useState([]);
+    
     const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
     function getTodos  (key){
@@ -14,12 +14,9 @@ function Todo() {
         }
     }
 
-    
-    useEffect(() => {
-        const saved = getTodos('todos');
-        console.log("Loading from localStorage:", saved);
-        setTodos(saved);
-    }, []);
+     const [todos, setTodos] = useState(()=>getTodos('todos'));
+    const [input, setInput] = useState("");
+    const [selectedDay, setSelectedDay] = useState("monday");
 
     
     useEffect(() => {
@@ -31,11 +28,9 @@ function Todo() {
         }
     }, [todos]);
 
-   
+  
 
-    const [input, setInput] = useState("");
-    const [selectedDay, setSelectedDay] = useState("monday");
-
+    
     const handleInputChange = (event) => {
         setInput(event.target.value);
     };
@@ -47,22 +42,16 @@ function Todo() {
     const handleAdd = () => {
         if (input.trim() === "") return;
 
+       
         const newTask = {
             id: Date.now(),
             text: input.trim(),
-            day: selectedDay,
-            completed: false
+            day: selectedDay
+            
         };
 
-        // create new array, set state and persist immediately
-        const newTodos = [...todos, newTask];
-        setTodos(newTodos);
-        try {
-            window.localStorage.setItem('todos', JSON.stringify(newTodos));
-            console.log('Saved immediately after add:', newTodos);
-        } catch (e) {
-            console.warn('Could not write to localStorage', e);
-        }
+       
+        setTodos(prev => [...prev, newTask]);
         setInput("");
     };
 
